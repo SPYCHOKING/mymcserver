@@ -1,3 +1,5 @@
 server.jar
 world/
 logs/
+cache/
+crash-reports/
