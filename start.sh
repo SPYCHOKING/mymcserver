@@ -2,7 +2,7 @@
 
 # Download server.jar if missing
 if [ ! -f server.jar ]; then
-    wget -O server.jar https://launcher.mojang.com/v1/objects/4f81d0328246d90e811f9cda525c20bbd76ecf43/server.jar
+    wget -O server.jar https://piston-data.mojang.com/v1/objects/69b4aeff4d461a775888b859504a829148d464ef/server.jar
 fi
 
 # Accept EULA
