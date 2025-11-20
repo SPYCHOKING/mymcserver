@@ -1,19 +1,16 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk
 
 # Install wget
 RUN apt-get update && apt-get install -y wget && apt-get clean
 
-# Create app folder
 WORKDIR /app
 
-# Copy your start script
+# Copy script
 COPY start.sh .
 
-# Make script executable
+# Make executable
 RUN chmod +x start.sh
 
-# Expose Minecraft default port
 EXPOSE 25565
 
-# Start the script
 CMD ["./start.sh"]
